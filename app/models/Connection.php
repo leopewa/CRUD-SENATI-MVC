@@ -1,7 +1,5 @@
 <?php
 
-
-
 $env = parse_ini_file(".env");
 
 $host=$env["DB_HOST"];
@@ -21,9 +19,8 @@ class Connection {
         $dsn= "mysql:host=$host;port=$port;dbname=$db_name";
         self::$pdo = new PDO ($dsn, $user, $pass);
 
-        if(!isset(self::$pdo)) {
             return self::$pdo;
-        }
+        
     }
 }
 ?>
