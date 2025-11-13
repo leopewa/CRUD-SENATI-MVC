@@ -23,7 +23,7 @@
                 <td><?= $user['id']; ?></td>
                 <td><?= $user['name']; ?></td>
                 <td><?= $user['lastname']; ?></td>
-                <td>Editar | Eliminar  </td>
+                <td><a href="app/views/editar.php?id=<?= $user['id']; ?>">Editar</a> | <td><a href="app/views/Eliminar.php?id=<?= $user['id']; ?>">Eliminar</a> </td>
                 
             </tr>
 
